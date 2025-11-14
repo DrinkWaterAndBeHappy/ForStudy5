@@ -12,6 +12,7 @@ public class Util {
     private static final String URL = "jdbc:mysql://localhost:3306/training";
 
     public static Connection getConnection() {
+
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(URL, USER_NAME, PASSWORD);
